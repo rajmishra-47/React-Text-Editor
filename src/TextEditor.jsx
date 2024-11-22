@@ -1,4 +1,5 @@
 import { useEffect, useCallback, useState } from 'react';
+import './App.css'
 import Quill from 'quill';
 import 'quill/dist/quill.snow.css';
 import { io } from 'socket.io-client';
@@ -60,5 +61,5 @@ export default function TextEditor() {
 
     
 
-    return <div ref={wrapperRef}></div>;
+    return <div className='container' ref={wrapperRef}></div>;
 }
